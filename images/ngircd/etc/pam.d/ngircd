@@ -1,0 +1,1 @@
+auth required pam_exec.so stdout expose_authtok log=/var/log/pam_exec.log /scripts/auth.sh

@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  ircd:
+    container_name: ircd
+    hostname: ircd
+    build:
+      context: ..
+    restart: unless-stopped
+    environment:
+      PUID: 1000
+      PGID: 1000
+      IMAP_HOST: "${IMAP_HOST}"
+      IMAP_PORT: "${IMAP_PORT}"
+    ports:
+      - "6667:6667"
+      - "6697:6697"
+    volumes:
+      - ./ngircd.conf:/config/ngircd/ngircd.conf:ro

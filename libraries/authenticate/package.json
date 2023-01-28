@@ -1,0 +1,33 @@
+{
+  "name": "emauth-authenticate",
+  "version": "0.0.1",
+  "description": "Authentication through IMAP",
+  "license": "MIT",
+  "private": true,
+
+  "author": {
+    "name": "errilaz",
+    "url": "http://github.com/errilaz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/errilaz/emauth.git"
+  },
+  "keywords": [
+    "emauth",
+    "authentication",
+    "imap"
+  ],
+  "main": "src/authenticate.ts",
+  "publishConfig": {
+    "main": "lib/authenticate.js"
+  },
+  "scripts": {
+    "build": "tsc --project .",
+    "clean": "rm -rf lib"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  }
+}

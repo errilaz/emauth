@@ -1,0 +1,39 @@
+{
+  "name": "emauth-passport",
+  "version": "0.0.1",
+  "description": "Passport Email Authentication Strategy",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "errilaz",
+    "url": "http://github.com/errilaz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/errilaz/emauth.git"
+  },
+  "keywords": [
+    "emauth",
+    "authentication",
+    "imap",
+    "passport"
+  ],
+  "main": "src/strategy.ts",
+  "publishConfig": {
+    "main": "lib/strategy.js"
+  },
+  "scripts": {
+    "build": "tsc --project .",
+    "clean": "rm -rf lib"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.16",
+    "@types/node": "^18.11.18",
+    "@types/passport-strategy": "^0.2.35",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "passport-strategy": "^1.0.0",
+    "emauth-authenticate": "workspace:*"
+  }
+}
