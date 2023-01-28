@@ -9,7 +9,7 @@ email authentication.
 
 ### Node Packages
 
-- [emauth-authenticate](libraries/authenticate)
+- [emauth-authenticate](libraries/authenticate): Authenticates through IMAP. Tiny with no dependencies.
 
 ### Docker Images
 
