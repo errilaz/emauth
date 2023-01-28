@@ -3,8 +3,6 @@
   "version": "0.0.1",
   "description": "Authentication through IMAP",
   "license": "MIT",
-  "private": true,
-
   "author": {
     "name": "errilaz",
     "url": "http://github.com/errilaz"
